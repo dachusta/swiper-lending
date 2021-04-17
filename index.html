@@ -9,7 +9,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="page">
+        <header class="header">
+            <nav class="header__menu menu">
+                <a href="" class="menu__link">Экран №1</a>
+                <a href="" class="menu__link">Экран №2</a>
+                <a href="" class="menu__link">Экран №3</a>
+                <a href="" class="menu__link">Экран №4</a>
+            </nav>
+        </header>
+        <main class="page">
             <div class="page__wrapper">
                 <div class="page__screen screen">
                     <div class="screen__content">
@@ -55,7 +63,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="page__pagination"></div>
+            <div class="page__scroll"></div>
+        </main>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

@@ -34,6 +34,38 @@ html, body {
     min-height: 100%;
 }
 /* ============================================ */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header__menu {
+}
+.menu {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+}
+.menu__link {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease 0s;
+    margin: 0px 20px 0px 0px;
+}
+.menu__link._active {
+    color: #7a956b;
+}
+@media (max-width: 767px) {
+    .menu__link {
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+    }
+}
+/* ============================================ */
 .page {
     position: fixed;
     width: 100%;
@@ -49,6 +81,42 @@ html, body {
     height: 100%;
 }
 .page__screen {
+}
+.page__pagination {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(0px, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.page__bullet {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease 0s;
+}
+.page__bullet_active {
+    background-color: #fff;
+}
+.page__scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.page__drag-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 /* =========================================== */
 .screen {
