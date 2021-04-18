@@ -32,6 +32,25 @@ html, body {
 }
 .wrapper {
     min-height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease 0s;
+}
+.wrapper._loaded {
+    opacity: 1;
+}
+.wrapper._loaded .header {
+    transition: transform 0.8s ease 0.8s;
+    transform: translate(0px, 0px);
+}
+.wrapper._loaded .page__pagination {
+    transform: translate(0px, -50%);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 1.3s ease 0.8s;
+}
+.wrapper._free .page__pagination {
+    transition: all 0.3s ease 0s;
+    transform: translate(70px, -50px);
 }
 /* ============================================ */
 header {
@@ -41,6 +60,7 @@ header {
     left: 0;
     z-index: 50;
     padding: 0px 20px;
+    transform: translate(0px, -100%);
     background-color: rgba(0, 0, 0, 0.5);
 }
 .header__menu {
@@ -86,7 +106,9 @@ header {
     position: absolute;
     top: 50%;
     right: 50px;
-    transform: translate(0px, -50%);
+    transform: translate(70px, -50%);
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
 }
