@@ -1,73 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Swiper</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Swiper</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <nav class="header__menu menu">
-                <a href="" class="menu__link">Экран №1</a>
-                <a href="" class="menu__link">Экран №2</a>
-                <a href="" class="menu__link">Экран №3</a>
-                <a href="" class="menu__link">Экран №4</a>
-            </nav>
-        </header>
-        <main class="page">
-            <div class="page__wrapper">
-                <div class="page__screen screen">
-                    <div class="screen__content">
-                        <h1 class="screen__title screen__title_bg" data-swiper-parallax="50%" data-swiper-parallax-opacity="0">Заголовок Главный</h1>
-                    </div>
-                    <div class="screen__body">
-                        <div class="screen__image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
-                            <img src="img/01.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="page__screen screen">
-                    <div class="screen__content">
-                        <h2 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Заголовок Вторичный</h2>
-                    </div>
-                    <div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
-                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.</p>
-                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных.</p>
-                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Однажды, ведущими!</p>
-                    </div>
-                </div>
-                <div class="page__screen screen">
-                    <div class="screen__body">
-                        <div class="screen__image" data-swiper-parallax="50%">
-                            <img src="img/02.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="page__screen screen">
-                    <div class="screen__content">
-                        <h2 class="screen__title">Заголовок Вторичный второй</h2>
-                    </div>
-                    <div class="screen__text">
-                        <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные.</p>
-                        <p>Далеко-далеко за словесными горами в стране гласных и согласных.</p>
-                    </div>
-                </div>
-                <div class="page__screen screen">
-                    <div class="screen__body">
-                        <div class="screen__image" data-swiper-parallax="50%">
-                            <img src="img/03.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header__menu menu">
+        <a href="" class="menu__link">Экран №1</a>
+        <a href="" class="menu__link">Экран №2</a>
+        <a href="" class="menu__link">Экран №3</a>
+        <a href="" class="menu__link">Экран №4</a>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="page__wrapper">
+        <div class="page__screen screen">
+          <div class="screen__content">
+            <h1 class="screen__title screen__title_bg screen__first" data-swiper-parallax="50%" data-swiper-parallax-opacity="0">Had of fair truth unveil'd</h1>
+            <div class="screen__text screen__first" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+              <h2>By proof of right, and of the false reproof</h2>
+              <p>And I, to own myself convinc'd and free Of doubt, as much as needed, rais'd my head Erect for speech.  But soon a sight appear'd, Which, so intent to mark it, held me fix'd, That of confession I no longer thought.</p>
             </div>
-            <div class="page__pagination"></div>
-            <div class="page__scroll"></div>
-        </main>
-    </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+          </div>
+          <div class="screen__body">
+            <div class="screen__image" data-swiper-parallax="33%" data-swiper-parallax-scale="1.1">
+              <img src="img/01.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="page__screen screen">
+          <div class="screen__content screen__second">
+            <h2 class="screen__title screen__second" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">As through translucent and smooth glass</h2>
+              <div class="screen__box">
+                <div class="screen__text screen__second" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+                  <p>Clear and unmov'd, and flowing not so deep As that its bed is dark, the shape returns So faint of our impictur'd lineaments, That on white forehead set a pearl as b Comes to the eye: such saw I many a face, All stretch'd to speak, from whence I straight conceiv'd Delusion opposite to that, which rais'd Between the man and fountain, amorous flame.</p>
+                </div>
+                <div class="screen__second__img">
+                  <img src="img/Torii/01.jpg" alt="">
+                  <img src="img/Torii/02.jpg" alt="">
+                  <img src="img/Torii/03.jpg" alt="">
+                  <img src="img/Torii/04.jpg" alt="">
+                </div>
+              </div>  
+          </div>
+          <div class="screen__body">
+            <div class="screen__image" data-swiper-parallax="50%">
+              <img src="img/02.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="page__screen screen">
+          <div class="screen__body">
+            <div class="screen__image" data-swiper-parallax="50%">
+              <img src="img/03.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="page__screen screen">
+          <div class="screen__content">
+            <h2 class="screen__title">Заголовок Вторичный второй</h2>
+            <div class="screen__text">
+              <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные.</p>
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных.</p>
+            </div>
+          </div>
+          <div class="screen__body">
+            <div class="screen__image" data-swiper-parallax="50%">
+              <img src="img/04.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="page__screen screen">
+          <div class="screen__body">
+            <div class="screen__image" data-swiper-parallax="50%">
+              <img src="img/05.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__pagination"></div>
+      <div class="page__scroll"></div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
